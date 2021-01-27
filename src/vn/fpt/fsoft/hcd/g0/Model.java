@@ -81,7 +81,7 @@ public class Model {
                 return false;
         }
         
-        public boolean isExistedSubject(String ID) {
+        public boolean isExistedSubject(String identification) {
                 
                 try{
                         FileReader fr = new FileReader(SUBJECT_FILE_PATH);
@@ -89,7 +89,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((ID.toLowerCase()).equals(line.split("_")[0].toLowerCase())) {
+                                if ((identification.toLowerCase()).equals(line.split("_")[0].toLowerCase())) {
                                         return true;
                                 }
                         }
