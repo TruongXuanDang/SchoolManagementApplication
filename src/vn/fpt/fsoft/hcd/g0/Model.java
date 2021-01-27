@@ -29,11 +29,9 @@ public class Model {
                                         return true;
                                 }
                         }
-                }
-                catch(FileNotFoundException f) {
+                } catch(FileNotFoundException f) {
                         f.printStackTrace();
-                }
-                catch(IOException io) {
+                } catch(IOException io) {
                         io.printStackTrace();
                 }
                 
@@ -52,11 +50,9 @@ public class Model {
                                         return false;
                                 }
                         }
-                }
-                catch(FileNotFoundException f) {
+                } catch(FileNotFoundException f) {
                         f.printStackTrace();
-                }
-                catch(IOException io) {
+                } catch(IOException io) {
                         io.printStackTrace();
                 }
                 
@@ -75,11 +71,9 @@ public class Model {
                                         return true;
                                 }
                         }
-                }
-                catch(FileNotFoundException f) {
+                } catch(FileNotFoundException f) {
                         f.printStackTrace();
-                }
-                catch(IOException io) {
+                } catch(IOException io) {
                         io.printStackTrace();
                 }
                 
@@ -98,11 +92,9 @@ public class Model {
                                         return true;
                                 }
                         }
-                }
-                catch(FileNotFoundException f) {
+                } catch(FileNotFoundException f) {
                         f.printStackTrace();
-                }
-                catch(IOException io) {
+                } catch(IOException io) {
                         io.printStackTrace();
                 }
                 
@@ -122,11 +114,9 @@ public class Model {
                                         return true;
                                 }
                         }
-                }
-                catch(FileNotFoundException f) {
+                } catch(FileNotFoundException f) {
                         f.printStackTrace();
-                }
-                catch(IOException io) {
+                } catch(IOException io) {
                         io.printStackTrace();
                 }
                 
@@ -141,11 +131,9 @@ public class Model {
         		    bw.newLine();
         		    bw.append(ID.toUpperCase()+"_"+Name.toUpperCase());
     			    bw.close();
-        	}
-        	catch(FileNotFoundException f) {
+        	} catch(FileNotFoundException f) {
                     f.printStackTrace();
-            }
-            catch(IOException io) {
+            } catch(IOException io) {
                     io.printStackTrace();
             }
         	
@@ -173,11 +161,9 @@ public class Model {
                         }
                         pr.flush();
                         pr.close();
-                }
-                catch(FileNotFoundException f) {
+                } catch(FileNotFoundException f) {
                         f.printStackTrace();
-                }
-                catch(IOException io) {
+                } catch(IOException io) {
                         io.printStackTrace();
                 }
                 
@@ -205,11 +191,9 @@ public class Model {
                         }
                         pr.flush();
                         pr.close();
-                }
-                catch(FileNotFoundException f) {
+                } catch(FileNotFoundException f) {
                         f.printStackTrace();
-                }
-                catch(IOException io) {
+                } catch(IOException io) {
                         io.printStackTrace();
                 }
         }
@@ -222,8 +206,7 @@ public class Model {
                         while((line = br.readLine()) != null) {
                                 View.showMessage(line.split("_")[0] + " " + line.split("_")[1] + "\n");
                         }
-                }
-                catch(Exception e){
+                } catch(Exception e){
                         e.printStackTrace();
                 }
         }
@@ -241,11 +224,9 @@ public class Model {
                                         View.showMessage(line.split("_")[1] + "\n");
                                 }
                         }
-                }
-                catch(FileNotFoundException f) {
+                } catch(FileNotFoundException f) {
                         f.printStackTrace();
-                }
-                catch(IOException io) {
+                } catch(IOException io) {
                         io.printStackTrace();
                 }
         }
@@ -258,11 +239,9 @@ public class Model {
                         bw.newLine();
                         bw.append(studentID.toUpperCase() + "_" + subjectID.toUpperCase() + "_" + grade);
                         bw.close();
-                }
-                catch(FileNotFoundException f) {
+                } catch(FileNotFoundException f) {
                         f.printStackTrace();
-                }
-                catch(IOException io) {
+                } catch(IOException io) {
                         io.printStackTrace();
                 }
                 

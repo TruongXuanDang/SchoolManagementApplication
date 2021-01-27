@@ -133,9 +133,7 @@ public class MainProgram {
 	        if (confirm.equals("N")) {
 	                startUp();
 	                return;
-	                
-	        }
-	        else {
+	        } else {
 	                connector.deleteClass(classID);
 	                View.showMessage(View.MSG3);
 	                control.waitKeyPress();

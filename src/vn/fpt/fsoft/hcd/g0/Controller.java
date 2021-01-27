@@ -19,8 +19,7 @@ public class Controller {
                         flag = true;
                         try {
                                 choice = Integer.parseInt(input);
-                        }
-                        catch (Exception e){
+                        } catch (Exception e){
                                 View.showMessage(View.MSG10);
                                 flag = false;
                         }
@@ -70,13 +69,12 @@ public class Controller {
         
         public boolean waitKeyPress() {
         	try {
-        		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        		int key = in.read();
-        		if(key != -1) {
-        			return true;
-        		}
-        	}
-        	catch(IOException io) {
+	        		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+	        		int key = in.read();
+	        		if(key != -1) {
+	        			return true;
+	        		}
+	        	} catch(IOException io) {
         		io.printStackTrace();
         	}
         	
@@ -100,8 +98,7 @@ public class Controller {
                         
                         try {
                                 grade = Integer.parseInt(input);
-                        }
-                        catch(Exception e) {
+                        } catch(Exception e) {
                                 View.showMessage(View.MSG13);
                                 flag = false;
                                 continue;
