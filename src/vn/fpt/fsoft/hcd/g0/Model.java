@@ -18,7 +18,7 @@ public class Model {
         static final String SUBJECT_FILE_PATH = ".\\Data\\subject.txt";
         static final String GRADE_FILE_PATH = ".\\Data\\grade.txt";
         
-        public boolean isExistedClass(String ID) {
+        public boolean isExistedClass(String identification) {
                 
                 try{
                         FileReader fr = new FileReader(CLASS_FILE_PATH);
@@ -26,7 +26,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((ID.toLowerCase()).equals(line.split("_")[0].toLowerCase())) {
+                                if ((identification.toLowerCase()).equals(line.split("_")[0].toLowerCase())) {
                                         return true;
                                 }
                         }
@@ -39,7 +39,7 @@ public class Model {
                 return false;
         }
         
-        public boolean isEmptyClass(String ID) {
+        public boolean isEmptyClass(String identification) {
                 
                 try{
                         FileReader fr = new FileReader(STUDENT_FILE_PATH);
@@ -47,7 +47,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((ID.toLowerCase()).equals(line.split("_")[ID_POSITION].toLowerCase())) {
+                                if ((identification.toLowerCase()).equals(line.split("_")[ID_POSITION].toLowerCase())) {
                                         return false;
                                 }
                         }
@@ -60,7 +60,7 @@ public class Model {
                 return true;
         }
         
-        public boolean isExistedStudent(String ID) {
+        public boolean isExistedStudent(String identification) {
                 
                 try{
                         FileReader fr = new FileReader(STUDENT_FILE_PATH);
@@ -68,7 +68,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((ID.toLowerCase()).equals(line.split("_")[0].toLowerCase())) {
+                                if ((identification.toLowerCase()).equals(line.split("_")[0].toLowerCase())) {
                                         return true;
                                 }
                         }
@@ -124,13 +124,13 @@ public class Model {
                 return false;
         }
         
-        public void addClassToFile(String ID, String Name) {
+        public void addClassToFile(String identification, String userName) {
         	
         	try {
         	        FileWriter fw = new FileWriter(CLASS_FILE_PATH,true);
         		    BufferedWriter bw = new BufferedWriter(fw);
         		    bw.newLine();
-        		    bw.append(ID.toUpperCase()+"_"+Name.toUpperCase());
+        		    bw.append(identification.toUpperCase()+"_"+userName.toUpperCase());
     			    bw.close();
         	} catch(FileNotFoundException f) {
                     f.printStackTrace();
@@ -140,7 +140,7 @@ public class Model {
         	
         }
         
-        public void renameClass(String ID, String name) {
+        public void renameClass(String identification, String name) {
                 
                 try {
                         FileReader fr = new FileReader(CLASS_FILE_PATH);
@@ -155,8 +155,8 @@ public class Model {
                         PrintWriter pr = new PrintWriter(CLASS_FILE_PATH);
                         for(int i=0; i < lineList.size() ;i++){
                             line = lineList.get(i);
-                            if(line.split("_")[0].toLowerCase().equals(ID.toLowerCase())) {
-                                line= ID.toUpperCase() + "_" + name.toUpperCase();
+                            if(line.split("_")[0].toLowerCase().equals(identification.toLowerCase())) {
+                                line= identification.toUpperCase() + "_" + name.toUpperCase();
                             }
                             pr.println(line);
                         }
@@ -170,7 +170,7 @@ public class Model {
                 
         }
         
-        public void deleteClass(String ID) {
+        public void deleteClass(String identification) {
                 
                 try {
                         FileReader fr = new FileReader(CLASS_FILE_PATH);
@@ -185,7 +185,7 @@ public class Model {
                         PrintWriter pr = new PrintWriter(CLASS_FILE_PATH);
                         for(int i=0; i < lineList.size() ;i++){
                             line = lineList.get(i);
-                            if(line.split("_")[0].toLowerCase().equals(ID.toLowerCase())) {
+                            if(line.split("_")[0].toLowerCase().equals(identification.toLowerCase())) {
                                 continue;
                             }
                             pr.println(line);
