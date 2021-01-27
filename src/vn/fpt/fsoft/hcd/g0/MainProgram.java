@@ -37,6 +37,8 @@ public class MainProgram {
 	        	                break;
 	        	        case OTHER_CHOICE: System.exit(0);
 	                        break;
+					default:
+						break;
         	        }
         	         break ;
                 case 2: // manage subject
@@ -54,6 +56,8 @@ public class MainProgram {
 	         	                break;
 	         	        case 5: System.exit(0);
 	         	                break;*/
+					default:
+						break;
          	        }
                         break;
                 case MANAGE_STUDENT_CHOICE: //manage student
