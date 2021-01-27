@@ -12,7 +12,8 @@ import java.util.ArrayList;
 
 public class Model {
         
-        static final String CLASS_FILE_PATH = ".\\Data\\class.txt";
+        private static final int ID_POSITION = 5;
+		static final String CLASS_FILE_PATH = ".\\Data\\class.txt";
         static final String STUDENT_FILE_PATH = ".\\Data\\student.txt";
         static final String SUBJECT_FILE_PATH = ".\\Data\\subject.txt";
         static final String GRADE_FILE_PATH = ".\\Data\\grade.txt";
@@ -46,7 +47,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((ID.toLowerCase()).equals(line.split("_")[5].toLowerCase())) {
+                                if ((ID.toLowerCase()).equals(line.split("_")[ID_POSITION].toLowerCase())) {
                                         return false;
                                 }
                         }

@@ -7,7 +7,11 @@ import java.util.Scanner;
 
 public class Controller {
         
-        public int getChoice() {
+        private static final int LOWER_BOUNDARY_VALUE = 1;
+		private static final int UPPER_BOUNDARY_VALUE = 5;
+		private static final int MAXIMUM_AGE = 10;
+
+		public int getChoice() {
                 System.out.print("Your option is: ");
                 
                 int choice = 0;
@@ -23,7 +27,7 @@ public class Controller {
                                 View.showMessage(View.MSG10);
                                 flag = false;
                         }
-                        if((choice >5 || choice < 1) && (choice != 0)){
+                        if((choice >UPPER_BOUNDARY_VALUE || choice < LOWER_BOUNDARY_VALUE) && (choice != 0)){
                                 View.showMessage(View.MSG10);
                                 flag = false;
                         }
@@ -104,7 +108,7 @@ public class Controller {
                                 continue;
                         }
                         
-                        if(grade > 10 || grade < 0) {
+                        if(grade > MAXIMUM_AGE || grade < 0) {
                                 View.showMessage(View.MSG11);
                                 flag = false;
                                 continue;

@@ -2,7 +2,13 @@ package vn.fpt.fsoft.hcd.g0;
 
 public class MainProgram {
 	
-        static View screen = new View();
+        private static final int OTHER_CHOICE = 5;
+		private static final int LIST_ALL_CHOICE = 4;
+		private static final int OTHER_MANAGE_CHOICE = 5;
+		private static final int MANAGE_REPORT_CHOICE = 4;
+		private static final int MANAGE_STUDENT_CHOICE = 3;
+		private static final int DELETE_CHOICE = 3;
+		static View screen = new View();
         static Controller control = new Controller();
         static Model connector = new Model();
         
@@ -25,11 +31,11 @@ public class MainProgram {
 	        	                break;
 	        	        case 2: updateClass();
 	        	                break;
-	        	        case 3: deleteClass();
+	        	        case DELETE_CHOICE: deleteClass();
 	        	                break;
-	        	        case 4: listAllClass();
+	        	        case LIST_ALL_CHOICE: listAllClass();
 	        	                break;
-	        	        case 5: System.exit(0);
+	        	        case OTHER_CHOICE: System.exit(0);
 	                        break;
         	        }
         	         break ;
@@ -50,15 +56,15 @@ public class MainProgram {
 	         	                break;*/
          	        }
                         break;
-                case 3: //manage student
+                case MANAGE_STUDENT_CHOICE: //manage student
                 	  screen.showStudentMenu();
           	          int choice3 = control.getChoice();
                       break;
-                case 4: //manage report
+                case MANAGE_REPORT_CHOICE: //manage report
                 	    screen.showReportMenu();
          	            int choice4 = control.getChoice(); 
                         break;
-                case 5: System.exit(0);
+                case OTHER_MANAGE_CHOICE: System.exit(0);
                         break;
                 }
 	}
