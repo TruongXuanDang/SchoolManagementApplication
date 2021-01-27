@@ -6,11 +6,14 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Controller {
-        
+//        lower boundary value
         private static final int LOWER_BOUNDARY_VALUE = 1;
+//        upper boundary value
 		private static final int UPPER_BOUNDARY_VALUE = 5;
+//		maximum age
 		private static final int MAXIMUM_AGE = 10;
 
+        //Get choice
 		public int getChoice() {
                 System.out.print("Your option is: ");
                 
@@ -35,6 +38,7 @@ public class Controller {
                 return choice;
         }
         
+        //Get input
         public String getInput() {
                 boolean flag = false;
                 String input = null;
@@ -51,6 +55,7 @@ public class Controller {
                 return input;
         }
         
+        //Get confirm
         public String getConfirm() {
                 boolean flag = false;
                 String input = null;
@@ -72,6 +77,7 @@ public class Controller {
                 return input.toUpperCase();
         }
         
+        //Wait key press
         public boolean waitKeyPress() {
         	try {
 	        		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -86,6 +92,7 @@ public class Controller {
         	return false;
         }
         
+        //Get grade
         public String getGrade() {
                 boolean flag = false;
                 String input = null;

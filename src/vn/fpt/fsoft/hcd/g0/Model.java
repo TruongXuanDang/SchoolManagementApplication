@@ -11,13 +11,17 @@ import java.util.ArrayList;
 
 
 public class Model {
-        
+    //ID Position
         private static final int ID_POSITION = 5;
+        //Class file path
 		static final String CLASS_FILE_PATH = ".\\Data\\class.txt";
+        //Student file path
         static final String STUDENT_FILE_PATH = ".\\Data\\student.txt";
+        //Subject file path
         static final String SUBJECT_FILE_PATH = ".\\Data\\subject.txt";
+        //Grade file path
         static final String GRADE_FILE_PATH = ".\\Data\\grade.txt";
-        
+        //Is existed class
         public boolean isExistedClass(String identification) {
                 
                 try{
@@ -39,6 +43,7 @@ public class Model {
                 return false;
         }
         
+        //Is empty class
         public boolean isEmptyClass(String identification) {
                 
                 try{
@@ -60,6 +65,7 @@ public class Model {
                 return true;
         }
         
+        //Is existed student
         public boolean isExistedStudent(String identification) {
                 
                 try{
@@ -81,6 +87,7 @@ public class Model {
                 return false;
         }
         
+        //Is existed subject
         public boolean isExistedSubject(String identification) {
                 
                 try{
@@ -102,6 +109,7 @@ public class Model {
                 return false;
         }
         
+        //Is existed grade
         public boolean isExistedGrade(String studentID, String subjectID) {
                 
                 try{
@@ -124,6 +132,7 @@ public class Model {
                 return false;
         }
         
+        //Add class to file
         public void addClassToFile(String identification, String userName) {
         	
         	try {
@@ -140,6 +149,7 @@ public class Model {
         	
         }
         
+        //Rename class
         public void renameClass(String identification, String name) {
                 
                 try {
@@ -170,6 +180,7 @@ public class Model {
                 
         }
         
+        //Delete class
         public void deleteClass(String identification) {
                 
                 try {
@@ -199,6 +210,7 @@ public class Model {
                 }
         }
         
+        //List all class
         public void listAllClass() {
                 try{
                         FileReader fr = new FileReader(CLASS_FILE_PATH);
@@ -212,6 +224,7 @@ public class Model {
                 }
         }
         
+        //Search student
         public void searchStudent(String keyword) {
                 
                 try {
@@ -232,6 +245,7 @@ public class Model {
                 }
         }
         
+        //Add grade to file
         public void addGradeToFile(String studentID, String subjectID, String grade) {
                 
                 try {

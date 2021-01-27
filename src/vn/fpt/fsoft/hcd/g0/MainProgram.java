@@ -1,22 +1,31 @@
 package vn.fpt.fsoft.hcd.g0;
 
 public class MainProgram {
-	
+    //Other choice
         private static final int OTHER_CHOICE = 5;
+        //List all choice
 		private static final int LIST_ALL_CHOICE = 4;
+        //Other manage choice
 		private static final int OTHER_MANAGE_CHOICE = 5;
+        //Manage report choice
 		private static final int MANAGE_REPORT_CHOICE = 4;
+        //Manage student choice
 		private static final int MANAGE_STUDENT_CHOICE = 3;
+        //Delete choice
 		private static final int DELETE_CHOICE = 3;
+        //Screen
 		static View screen = new View();
+        //Control
         static Controller control = new Controller();
+        //Connector
         static Model connector = new Model();
-        
+        //Main function
 	public static void main(String[] args) {
 	        
 	        startUp();
 	}
 	
+    //Start up
 	public static void startUp() {
 	            screen.showMainMenu();
                 int choice =  control.getChoice();
@@ -75,7 +84,7 @@ public class MainProgram {
                 }
 	}
 	
-	
+    //Add new class
 	public static void addNewClass() {
 	        boolean flag = true;
 	        String classID = null;
@@ -97,6 +106,7 @@ public class MainProgram {
 	        startUp();
 	}
 	
+    //Update class
 	public static void updateClass() {
 		
 		boolean flag = false;
@@ -119,6 +129,7 @@ public class MainProgram {
                 startUp();
 	}
 	
+    //Delete class
 	public static void deleteClass() {
 	        
 	        boolean flag = false;
@@ -153,6 +164,7 @@ public class MainProgram {
 	        }
 	}
 	
+    //List all class
 	public static void listAllClass() {
 	        screen.showListAllClass();
 	        connector.listAllClass();
@@ -161,10 +173,12 @@ public class MainProgram {
                 startUp();
 	}
 	
+    //Add new subject
 	public static void addNewSubject() {
 	        
 	}
 	
+    //Search student
 	public static void searchStudent() {
 	        
 	        String keyword = null;
@@ -177,6 +191,7 @@ public class MainProgram {
 	        startUp();
 	}
 	
+    //Input student grade
 	public static void inputStudentGrade() {
 	        
 	        String studentID = null;
