@@ -78,7 +78,7 @@ public class MainProgram {
 	        while(flag) {
 	                screen.showAddClass();
 	                classID = control.getInput();
-	                if ((flag = connector.isExistedClass(classID))) {
+	                if ((flag == connector.isExistedClass(classID))) {
 	                        View.showMessage(View.MSG2);
 	                }
 	        }
@@ -100,7 +100,7 @@ public class MainProgram {
 		while(!flag) {
 			screen.showUpdateClass();
 			classID = control.getInput();
-			if (!(flag = connector.isExistedClass(classID))) {
+			if (!(flag == connector.isExistedClass(classID))) {
 				View.showMessage(View.MSG4);
 			}
 		}
