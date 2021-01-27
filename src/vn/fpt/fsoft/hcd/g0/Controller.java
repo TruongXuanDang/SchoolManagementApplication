@@ -17,7 +17,7 @@ public class Controller {
                 int choice = 0;
                 boolean flag = false;
                 
-                while(flag == false ) {
+                while(flag) {
                         Scanner sc = new Scanner(System.in);
                         String input = sc.nextLine();
                         flag = true;
@@ -40,7 +40,7 @@ public class Controller {
                 String input = null;
                 Scanner sc = new Scanner(System.in);
                 
-                while(flag == false){
+                while(flag){
                         flag = true;
                         input = sc.nextLine();
                         if (input.equals("")) {
@@ -56,14 +56,15 @@ public class Controller {
                 String input = null;
                 Scanner sc = new Scanner(System.in);
                 
-                while(flag == false){
+                while(flag){
                         flag = true;
                         input = sc.nextLine();
                         if (input.equals("")) {
                                 View.showMessage(View.MSG1);
                                 flag = false;
                         }
-                        if (!(input.toLowerCase().equals("y") || input.toLowerCase().equals("n"))) {
+                        if (!(input.toLowerCase().equals("y") 
+                        		|| input.toLowerCase().equals("n"))) {
                                 View.showMessage(View.MSG10);
                                 flag = false;
                         }
@@ -91,7 +92,7 @@ public class Controller {
                 Scanner sc = new Scanner(System.in);
                 int grade = -1;
                 
-                while(flag == false){
+                while(flag){
                         flag = true;
                         input = sc.nextLine();
                         if (input.equals("")) {
