@@ -66,6 +66,8 @@ public class MainProgram {
                         break;
                 case OTHER_MANAGE_CHOICE: System.exit(0);
                         break;
+				default:
+					break;
                 }
 	}
 	
