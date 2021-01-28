@@ -1,31 +1,55 @@
 package vn.fpt.fsoft.hcd.g0;
 
 public class MainProgram {
-    	//Other choice
+		/**
+		 * Represents Other choice.
+		 */ 
         private static final int OTHER_CHOICE = 5;
-        //List all choice
+        /**
+		 * List all choice.
+		 */ 
 		private static final int LIST_ALL_CHOICE = 4;
-        //Other manage choice
+		/**
+		 * Other manage choice.
+		 */ 
 		private static final int OTHER_MANAGE_CHOICE = 5;
-        //Manage report choice
+		/**
+		 * Manage report choice.
+		 */
 		private static final int MANAGE_REPORT_CHOICE = 4;
-        //Manage student choice
+		/**
+		 * Manage student choice.
+		 */
 		private static final int MANAGE_STUDENT_CHOICE = 3;
-        //Delete choice
+		/**
+		 * Delete choice.
+		 */
 		private static final int DELETE_CHOICE = 3;
-        //Screen
+		/**
+		 * Screen.
+		 */
 		static View screen = new View();
-        //Control
+		/**
+		 * Control.
+		 */
         static Controller control = new Controller();
-        //Connector
+        /**
+		 * Connector.
+		 */
         static Model connector = new Model();
-        //Main function
+        
+        /**
+		 * Main function.
+		 * @param args
+		 */
 	public static void main(String[] args) {
 	        
 	        startUp();
 	}
 	
-    //Start up
+	/**
+	 * Represents start up function.
+	 */ 
 	public static void startUp() {
 	            screen.showMainMenu();
                 int choice =  control.getChoice();
@@ -84,7 +108,9 @@ public class MainProgram {
                 }
 	}
 	
-    //Add new class
+	/**
+	 * Represent addNewClass function.
+	 */ 
 	public static void addNewClass() {
 	        boolean flag = true;
 	        String classID = null;
@@ -106,7 +132,9 @@ public class MainProgram {
 	        startUp();
 	}
 	
-    //Update class
+	/**
+	 * Represents updateClass function.
+	 */ 
 	public static void updateClass() {
 		
 		boolean flag = false;
@@ -129,7 +157,9 @@ public class MainProgram {
                 startUp();
 	}
 	
-    //Delete class
+	/**
+	 * Represents Delete class function.
+	 */ 
 	public static void deleteClass() {
 	        
 	        boolean flag = false;
@@ -164,7 +194,9 @@ public class MainProgram {
 	        }
 	}
 	
-    //List all class
+	/**
+	 * Represents List all class function.
+	 */ 
 	public static void listAllClass() {
 	        screen.showListAllClass();
 	        connector.listAllClass();
@@ -173,12 +205,16 @@ public class MainProgram {
                 startUp();
 	}
 	
-    //Add new subject
+	/**
+	 * Represents Add new subject function.
+	 */
 	public static void addNewSubject() {
 	        
 	}
 	
-    //Search student
+	/**
+	 * Represents searchStudent function.
+	 */
 	public static void searchStudent() {
 	        
 	        String keyword = null;
@@ -191,7 +227,9 @@ public class MainProgram {
 	        startUp();
 	}
 	
-    //Input student grade
+	/**
+	 * Represents inputStudentGrade function.
+	 */ 
 	public static void inputStudentGrade() {
 	        
 	        String studentID = null;

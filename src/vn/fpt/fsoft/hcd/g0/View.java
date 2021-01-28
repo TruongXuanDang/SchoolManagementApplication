@@ -1,46 +1,77 @@
 package vn.fpt.fsoft.hcd.g0;
 
 public class View {
-        //Message 1
+		/**
+		 * Represents Message 1.
+		 */    
         static final String MSG1 = 
         		"Field cannot be blank!\nPlease input again: ";
-        //Message 2
+        /**
+		 * Represents Message 2.
+		 */ 
         static final String MSG2 = 
         		"This class has already existed!\n";
-        //Message 3
+        /**
+		 * Represents Message 3.
+		 */ 
         static final String MSG3 = 
         	"Action successfully operated.\nPress <Enter> to go back\n";
-        //Message 4
+        /**
+		 * Represents Message 4.
+		 */ 
         static final String MSG4 = 
         		"There is no such class\n";
-        //Message 5
+        /**
+		 * Represents Message 5.
+		 */ 
         static final String MSG5 = 
         		"This class is not empty.\nCan not delete!\n";
-        //Message 6
+        /**
+		 * Represents Message 6.
+		 */ 
         static final String MSG6 = 
         		"This subject has already existed!\n";
-        //Message 7
+        /**
+		 * Represents Message 7.
+		 */ 
         static final String MSG7 = "There is no such subject!\n";
-        //Message 8
+        /**
+		 * Represents Message 8.
+		 */ 
         static final String MSG8 = "This student has already existed!\n";
-        //Message 9
+        /**
+		 * Represents Message 9.
+		 */ 
         static final String MSG9 = "There is no such student!\n";
-        //Message 10
+        /**
+		 * Represents Message 10.
+		 */ 
         static final String MSG10 = "Invalid choice!\nPlease input again: ";
-        //Message 11
+        /**
+		 * Represents Message 11.
+		 */ 
         static final String MSG11 = "The number must be between 1 and 10: ";
-        //Message 12
+        /**
+		 * Represents Message 12.
+		 */ 
         static final String MSG12 = "This grade has already inputted!\n";
-        //Message 13
+        /**
+		 * Represents Message 13.
+		 */ 
         static final String MSG13 = "Invalid Input!Must be a number.\n" +
         		"Please input again: ";
         
-        //Show message
+        /**
+		 * Represents showMessage function.
+		 * @param msg
+		 */ 
         public static void showMessage(String msg) {
                 System.out.print(msg);
         }
         
-        //Show main menu
+        /**
+    	 * Represents showMainMenu function.
+    	 */
         public void showMainMenu() {
                 System.out.println();
                 System.out.println
@@ -55,7 +86,9 @@ public class View {
                 System.out.println("5.Quit");
         }
         
-        //Show class menu
+        /**
+    	 * Represents showClassMenu function.
+    	 */
         public void showClassMenu() {
                 System.out.println();
                 System.out.println
@@ -70,7 +103,9 @@ public class View {
                 System.out.println("5.Quit");
         }
         
-        //Show subject menu
+        /**
+    	 * Represents showSubjectMenu function.
+    	 */
         public void showSubjectMenu() {
                 System.out.println();
                 System.out.println
@@ -85,7 +120,9 @@ public class View {
                 System.out.println("5.Quit");
         }
         
-        //Show student menu
+        /**
+    	 * Represents showStudentMenu function.
+    	 */
         public void showStudentMenu() {
                 System.out.println();
                 System.out.println
@@ -100,7 +137,9 @@ public class View {
                 System.out.println("5.Quit");
         }
         
-//        Show report menu
+        /**
+    	 * Represents showReportMenu function.
+    	 */
         public void showReportMenu() {
                 System.out.println();
                 System.out.println
@@ -115,7 +154,9 @@ public class View {
                 System.out.println("5.Quit");
         }
         
-        //Show add class
+        /**
+    	 * Represents showAddClass function.
+    	 */
         public void showAddClass() {
                 System.out.println();
                 System.out.println
@@ -125,7 +166,9 @@ public class View {
                 System.out.print("Input Class ID: ");
         }
         
-        //Show update class
+        /**
+    	 * Represents showUpdateClass function.
+    	 */
         public void showUpdateClass() {
                 System.out.println();
                 System.out.println
@@ -135,7 +178,9 @@ public class View {
                 System.out.print("Select Class: ");
         }
         
-//        Show delete class
+        /**
+    	 * Represents showDeleteClass function.
+    	 */
         public void showDeleteClass() {
                 System.out.println();
                 System.out.println
@@ -145,7 +190,9 @@ public class View {
                 System.out.print("Select Class: ");
         }
         
-//        Show list all class
+        /**
+    	 * Represents showListAllClass function.
+    	 */
         public void showListAllClass() {
                 System.out.println();
                 System.out.println
@@ -155,7 +202,9 @@ public class View {
                 System.out.println();
         }
         
-//        Show search student
+        /**
+    	 * Represents showSearchStudent function.
+    	 */
         public void showSearchStudent() {
                 System.out.println();
                 System.out.println
@@ -165,7 +214,9 @@ public class View {
                 System.out.print("Input String: ");
         }
         
-//        Show input student grade
+        /**
+    	 * Represents showInputStudentGrade function.
+    	 */
         public void showInputStudentGrade() {
                 System.out.println();
                 System.out.println

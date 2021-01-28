@@ -6,14 +6,22 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Controller {
-//        lower boundary value
+		/**
+		 * Represent lower boundary value.
+		 */
         private static final int LOWER_BOUNDARY_VALUE = 1;
-//        upper boundary value
+        /**
+    	 * Represent upper boundary value.
+    	 */
 		private static final int UPPER_BOUNDARY_VALUE = 5;
-//		maximum age
+		/**
+    	 * Represent maximum age.
+    	 */
 		private static final int MAXIMUM_AGE = 10;
-
-        //Get choice
+		/**
+    	 * Represent get choice function.
+    	 * @return int
+    	 */
 		public int getChoice() {
                 System.out.print("Your option is: ");
                 
@@ -40,7 +48,10 @@ public class Controller {
                 return choice;
         }
         
-        //Get input
+		/**
+    	 * Represent get input function.
+    	 * @return String
+    	 */
         public String getInput() {
                 boolean flag = false;
                 String input = null;
@@ -57,7 +68,10 @@ public class Controller {
                 return input;
         }
         
-        //Get confirm
+        /**
+    	 * Represent get confirm function.
+    	 * @return String
+    	 */
         public String getConfirm() {
                 boolean flag = false;
                 String input = null;
@@ -79,7 +93,10 @@ public class Controller {
                 return input.toUpperCase();
         }
         
-        //Wait key press
+        /**
+    	 * Represent waitKeyPress function.
+    	 * @return boolean
+    	 */
         public boolean waitKeyPress() {
         	try {
 	        		BufferedReader in = new BufferedReader
@@ -95,7 +112,10 @@ public class Controller {
         	return false;
         }
         
-        //Get grade
+        /**
+    	 * Represent Get grade function.
+    	 * @return String
+    	 */
         public String getGrade() {
                 boolean flag = false;
                 String input = null;

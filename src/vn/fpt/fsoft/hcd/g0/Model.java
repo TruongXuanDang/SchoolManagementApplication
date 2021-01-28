@@ -11,17 +11,31 @@ import java.util.ArrayList;
 
 
 public class Model {
-    //ID Position
+		/**
+		 * Represents ID Position.
+		 */ 	
         private static final int ID_POSITION = 5;
-        //Class file path
+        /**
+		 * Represents Class file path.
+		 */
 		static final String CLASS_FILE_PATH = ".\\Data\\class.txt";
-        //Student file path
+		/**
+		 * Represents Student file path.
+		 */
         static final String STUDENT_FILE_PATH = ".\\Data\\student.txt";
-        //Subject file path
+        /**
+		 * Represents Subject file path.
+		 */
         static final String SUBJECT_FILE_PATH = ".\\Data\\subject.txt";
-        //Grade file path
+        /**
+		 * Represents Grade file path.
+		 */
         static final String GRADE_FILE_PATH = ".\\Data\\grade.txt";
-        //Is existed class
+        /**
+		 * Represents Is existed class.
+		 * @param identification
+		 * @return boolean.
+		 */
         public boolean isExistedClass(String identification) {
                 
                 try{
@@ -45,7 +59,11 @@ public class Model {
                 return false;
         }
         
-        //Is empty class
+        /**
+    	 * Represents isEmptyClass function.
+    	 * @param identification
+    	 * @return boolean
+    	 */
         public boolean isEmptyClass(String identification) {
                 
                 try{
@@ -69,7 +87,11 @@ public class Model {
                 return true;
         }
         
-        //Is existed student
+        /**
+    	 * Represents isExistedStudent function.
+    	 * @param identification
+    	 * @return boolean
+    	 */
         public boolean isExistedStudent(String identification) {
                 
                 try{
@@ -93,7 +115,11 @@ public class Model {
                 return false;
         }
         
-        //Is existed subject
+        /**
+    	 * Represents isExistedSubject function.
+    	 * @param identification
+    	 * @return boolean
+    	 */
         public boolean isExistedSubject(String identification) {
                 
                 try{
@@ -117,7 +143,12 @@ public class Model {
                 return false;
         }
         
-        //Is existed grade
+        /**
+    	 * Represents isExistedGrade function.
+    	 * @param studentID
+    	 * @param subjectID
+    	 * @return boolean
+    	 */
         public boolean isExistedGrade(String studentID, String subjectID) {
                 
                 try{
@@ -142,7 +173,11 @@ public class Model {
                 return false;
         }
         
-        //Add class to file
+        /**
+    	 * Represents addClassToFile function.
+    	 * @param identification
+    	 * @param userName
+    	 */
         public void addClassToFile(String identification, String userName) {
         	
         	try {
@@ -160,7 +195,11 @@ public class Model {
         	
         }
         
-        //Rename class
+        /**
+    	 * Represents renameClass function.
+    	 * @param identification
+    	 * @param name
+    	 */
         public void renameClass(String identification, String name) {
                 
                 try {
@@ -193,7 +232,10 @@ public class Model {
                 
         }
         
-        //Delete class
+        /**
+    	 * Represents deleteClass function.
+    	 * @param identification
+    	 */
         public void deleteClass(String identification) {
                 
                 try {
@@ -224,7 +266,9 @@ public class Model {
                 }
         }
         
-        //List all class
+        /**
+    	 * Represents listAllClass function.
+    	 */
         public void listAllClass() {
                 try{
                         FileReader fr = new FileReader(CLASS_FILE_PATH);
@@ -239,7 +283,10 @@ public class Model {
                 }
         }
         
-        //Search student
+        /**
+    	 * Represents searchStudent function.
+    	 * @param keyword
+    	 */
         public void searchStudent(String keyword) {
                 
                 try {
@@ -261,7 +308,12 @@ public class Model {
                 }
         }
         
-        //Add grade to file
+        /**
+    	 * Represents addGradeToFile function.
+    	 * @param grade 
+    	 * @param studentID
+    	 * @param subjectID
+    	 */
         public void addGradeToFile
         (String studentID, String subjectID, String grade) {
                 
