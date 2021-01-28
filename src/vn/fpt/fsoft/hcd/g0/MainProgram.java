@@ -1,7 +1,7 @@
 package vn.fpt.fsoft.hcd.g0;
 
 public class MainProgram {
-    //Other choice
+    	//Other choice
         private static final int OTHER_CHOICE = 5;
         //List all choice
 		private static final int LIST_ALL_CHOICE = 4;
