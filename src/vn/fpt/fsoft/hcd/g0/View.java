@@ -2,17 +2,23 @@ package vn.fpt.fsoft.hcd.g0;
 
 public class View {
         //Message 1
-        static final String MSG1 = "Field cannot be blank!\nPlease input again: ";
+        static final String MSG1 = 
+        		"Field cannot be blank!\nPlease input again: ";
         //Message 2
-        static final String MSG2 = "This class has already existed!\n";
+        static final String MSG2 = 
+        		"This class has already existed!\n";
         //Message 3
-        static final String MSG3 = "Action successfully operated.\nPress <Enter> to go back\n";
+        static final String MSG3 = 
+        	"Action successfully operated.\nPress <Enter> to go back\n";
         //Message 4
-        static final String MSG4 = "There is no such class\n";
+        static final String MSG4 = 
+        		"There is no such class\n";
         //Message 5
-        static final String MSG5 = "This class is not empty.\nCan not delete!\n";
+        static final String MSG5 = 
+        		"This class is not empty.\nCan not delete!\n";
         //Message 6
-        static final String MSG6 = "This subject has already existed!\n";
+        static final String MSG6 = 
+        		"This subject has already existed!\n";
         //Message 7
         static final String MSG7 = "There is no such subject!\n";
         //Message 8
@@ -37,7 +43,8 @@ public class View {
         //Show main menu
         public void showMainMenu() {
                 System.out.println();
-                System.out.println("--------Student Management Application--------");
+                System.out.println
+                ("--------Student Management Application--------");
                 System.out.println();
                 System.out.println("Choose an option: ");
                 System.out.println();
@@ -51,7 +58,8 @@ public class View {
         //Show class menu
         public void showClassMenu() {
                 System.out.println();
-                System.out.println("--Student Management Application Manage Class--");
+                System.out.println
+                ("--Student Management Application Manage Class--");
                 System.out.println();
                 System.out.println("Choose an option: ");
                 System.out.println();
@@ -65,7 +73,8 @@ public class View {
         //Show subject menu
         public void showSubjectMenu() {
                 System.out.println();
-                System.out.println("--Student Management Application Manage Subject--");
+                System.out.println
+                ("--Student Management Application Manage Subject--");
                 System.out.println();
                 System.out.println("Choose an option: ");
                 System.out.println();
@@ -79,7 +88,8 @@ public class View {
         //Show student menu
         public void showStudentMenu() {
                 System.out.println();
-                System.out.println("--Student Management Application Manage Student--");
+                System.out.println
+                ("--Student Management Application Manage Student--");
                 System.out.println();
                 System.out.println("Choose an option: ");
                 System.out.println();
@@ -93,7 +103,8 @@ public class View {
 //        Show report menu
         public void showReportMenu() {
                 System.out.println();
-                System.out.println("--Student Management Application Report Functions--");
+                System.out.println
+                ("--Student Management Application Report Functions--");
                 System.out.println();
                 System.out.println("Choose an option: ");
                 System.out.println();
@@ -107,7 +118,8 @@ public class View {
         //Show add class
         public void showAddClass() {
                 System.out.println();
-                System.out.println("--------Student Management Application--------");
+                System.out.println
+                ("--------Student Management Application--------");
                 System.out.println();
                 System.out.println("Add New Class");
                 System.out.print("Input Class ID: ");
@@ -116,7 +128,8 @@ public class View {
         //Show update class
         public void showUpdateClass() {
                 System.out.println();
-                System.out.println("--------Student Management Application--------");
+                System.out.println
+                ("--------Student Management Application--------");
                 System.out.println();
                 System.out.println("Update Class");
                 System.out.print("Select Class: ");
@@ -125,7 +138,8 @@ public class View {
 //        Show delete class
         public void showDeleteClass() {
                 System.out.println();
-                System.out.println("--------Student Management Application--------");
+                System.out.println
+                ("--------Student Management Application--------");
                 System.out.println();
                 System.out.println("Delete Class");
                 System.out.print("Select Class: ");
@@ -134,7 +148,8 @@ public class View {
 //        Show list all class
         public void showListAllClass() {
                 System.out.println();
-                System.out.println("--------Student Management Application--------");
+                System.out.println
+                ("--------Student Management Application--------");
                 System.out.println();
                 System.out.println("List All Classes");
                 System.out.println();
@@ -143,7 +158,8 @@ public class View {
 //        Show search student
         public void showSearchStudent() {
                 System.out.println();
-                System.out.println("--------Student Management Application--------");
+                System.out.println
+                ("--------Student Management Application--------");
                 System.out.println();
                 System.out.println("Search Student");
                 System.out.print("Input String: ");
@@ -152,7 +168,8 @@ public class View {
 //        Show input student grade
         public void showInputStudentGrade() {
                 System.out.println();
-                System.out.println("--------Student Management Application--------");
+                System.out.println
+                ("--------Student Management Application--------");
                 System.out.println();
                 System.out.print("Input Student Grade: ");
         }

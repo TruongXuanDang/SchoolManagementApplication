@@ -30,7 +30,9 @@ public class Controller {
                                 View.showMessage(View.MSG10);
                                 flag = false;
                         }
-                        if((choice >UPPER_BOUNDARY_VALUE || choice < LOWER_BOUNDARY_VALUE) && (choice != 0)){
+                        if((choice >UPPER_BOUNDARY_VALUE 
+                        		|| choice < LOWER_BOUNDARY_VALUE) 
+                        		&& (choice != 0)){
                                 View.showMessage(View.MSG10);
                                 flag = false;
                         }
@@ -80,7 +82,8 @@ public class Controller {
         //Wait key press
         public boolean waitKeyPress() {
         	try {
-	        		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+	        		BufferedReader in = new BufferedReader
+	        			(new InputStreamReader(System.in));
 	        		int key = in.read();
 	        		if(key != -1) {
 	        			return true;

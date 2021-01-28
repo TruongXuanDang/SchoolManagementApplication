@@ -30,7 +30,9 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((identification.toLowerCase()).equals(line.split("_")[0].toLowerCase())) {
+                                if ((identification.toLowerCase()).
+                                		equals(line.split("_")[0].
+                                		toLowerCase())) {
                                         return true;
                                 }
                         }
@@ -52,8 +54,10 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((identification.toLowerCase()).equals(line.split("_")[ID_POSITION].toLowerCase())) {
-                                        return false;
+                                if ((identification.toLowerCase()).
+                                	equals(line.split("_")[ID_POSITION].
+                                	toLowerCase())) {
+                                    return false;
                                 }
                         }
                 } catch(FileNotFoundException f) {
@@ -74,7 +78,9 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((identification.toLowerCase()).equals(line.split("_")[0].toLowerCase())) {
+                                if ((identification.toLowerCase()).
+                                		equals(line.split("_")[0].
+                                		toLowerCase())) {
                                         return true;
                                 }
                         }
@@ -96,7 +102,9 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((identification.toLowerCase()).equals(line.split("_")[0].toLowerCase())) {
+                                if ((identification.toLowerCase()).
+                                		equals(line.split("_")[0].
+                                		toLowerCase())) {
                                         return true;
                                 }
                         }
@@ -118,8 +126,10 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
-                                if ((studentID.toLowerCase()).equals(line.split("_")[0].toLowerCase())
-                                     && subjectID.toLowerCase().equals(line.split("_")[1].toLowerCase())) {
+                                if ((studentID.toLowerCase()).equals
+                                	(line.split("_")[0].toLowerCase())
+                                     && subjectID.toLowerCase().equals
+                                     (line.split("_")[1].toLowerCase())) {
                                         return true;
                                 }
                         }
@@ -139,7 +149,8 @@ public class Model {
         	        FileWriter fw = new FileWriter(CLASS_FILE_PATH,true);
         		    BufferedWriter bw = new BufferedWriter(fw);
         		    bw.newLine();
-        		    bw.append(identification.toUpperCase()+"_"+userName.toUpperCase());
+        		    bw.append(identification.toUpperCase()
+        		    		+"_"+userName.toUpperCase());
     			    bw.close();
         	} catch(FileNotFoundException f) {
                     f.printStackTrace();
@@ -165,8 +176,10 @@ public class Model {
                         PrintWriter pr = new PrintWriter(CLASS_FILE_PATH);
                         for(int i=0; i < lineList.size() ;i++){
                             line = lineList.get(i);
-                            if(line.split("_")[0].toLowerCase().equals(identification.toLowerCase())) {
-                                line= identification.toUpperCase() + "_" + name.toUpperCase();
+                            if(line.split("_")[0].toLowerCase()
+                            		.equals(identification.toLowerCase())) {
+                                line= identification.toUpperCase() 
+                                		+ "_" + name.toUpperCase();
                             }
                             pr.println(line);
                         }
@@ -196,7 +209,8 @@ public class Model {
                         PrintWriter pr = new PrintWriter(CLASS_FILE_PATH);
                         for(int i=0; i < lineList.size() ;i++){
                             line = lineList.get(i);
-                            if(line.split("_")[0].toLowerCase().equals(identification.toLowerCase())) {
+                            if(line.split("_")[0].toLowerCase().equals
+                            		(identification.toLowerCase())) {
                                 continue;
                             }
                             pr.println(line);
@@ -217,7 +231,8 @@ public class Model {
                         BufferedReader br = new BufferedReader(fr);
                         String line;
                         while((line = br.readLine()) != null) {
-                                View.showMessage(line.split("_")[0] + " " + line.split("_")[1] + "\n");
+                                View.showMessage(line.split("_")[0] 
+                                	+ " " + line.split("_")[1] + "\n");
                         }
                 } catch(Exception e){
                         e.printStackTrace();
@@ -234,8 +249,9 @@ public class Model {
                         
                         View.showMessage("Result\n");
                         while((line = br.readLine()) != null) {
-                                if (line.split("_")[1].toLowerCase().contains(keyword.toLowerCase())) {
-                                        View.showMessage(line.split("_")[1] + "\n");
+                                if (line.split("_")[1].toLowerCase()
+                                	.contains(keyword.toLowerCase())) {
+                                 View.showMessage(line.split("_")[1] + "\n");
                                 }
                         }
                 } catch(FileNotFoundException f) {
@@ -246,13 +262,15 @@ public class Model {
         }
         
         //Add grade to file
-        public void addGradeToFile(String studentID, String subjectID, String grade) {
+        public void addGradeToFile
+        (String studentID, String subjectID, String grade) {
                 
                 try {
                         FileWriter fw = new FileWriter(GRADE_FILE_PATH,true);
                         BufferedWriter bw = new BufferedWriter(fw);
                         bw.newLine();
-                        bw.append(studentID.toUpperCase() + "_" + subjectID.toUpperCase() + "_" + grade);
+                        bw.append(studentID.toUpperCase() + "_" 
+                        + subjectID.toUpperCase() + "_" + grade);
                         bw.close();
                 } catch(FileNotFoundException f) {
                         f.printStackTrace();
