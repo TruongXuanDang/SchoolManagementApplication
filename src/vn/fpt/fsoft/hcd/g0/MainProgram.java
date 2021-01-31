@@ -95,11 +95,9 @@ public class MainProgram {
                         break;
                 case MANAGE_STUDENT_CHOICE: //manage student
                 	  screen.showStudentMenu();
-          	          int choice3 = control.getChoice();
                       break;
                 case MANAGE_REPORT_CHOICE: //manage report
                 	    screen.showReportMenu();
-         	            int choice4 = control.getChoice(); 
                         break;
                 case OTHER_MANAGE_CHOICE: System.exit(0);
                         break;
