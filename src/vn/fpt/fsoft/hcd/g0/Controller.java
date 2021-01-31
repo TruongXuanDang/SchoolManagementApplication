@@ -31,6 +31,7 @@ public class Controller {
                 while(flag) {
                         Scanner sc = new Scanner(System.in);
                         String input = sc.nextLine();
+                        sc.close();
                         flag = true;
                         try {
                                 choice = Integer.parseInt(input);
@@ -60,6 +61,7 @@ public class Controller {
                 while(flag){
                         flag = true;
                         input = sc.nextLine();
+                        sc.close();
                         if (input.equals("")) {
                                 View.showMessage(View.MSG1);
                                 flag = false;
@@ -80,6 +82,7 @@ public class Controller {
                 while(flag){
                         flag = true;
                         input = sc.nextLine();
+                        sc.close();
                         if (input.equals("")) {
                                 View.showMessage(View.MSG1);
                                 flag = false;
@@ -125,6 +128,7 @@ public class Controller {
                 while(flag){
                         flag = true;
                         input = sc.nextLine();
+                        sc.close();
                         if (input.equals("")) {
                                 View.showMessage(View.MSG1);
                                 flag = false;

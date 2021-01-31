@@ -44,6 +44,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
+                        	br.close();
                                 if ((identification.toLowerCase()).
                                 		equals(line.split("_")[0].
                                 		toLowerCase())) {
@@ -72,6 +73,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
+                        	br.close();
                                 if ((identification.toLowerCase()).
                                 	equals(line.split("_")[ID_POSITION].
                                 	toLowerCase())) {
@@ -100,6 +102,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
+                        	br.close();
                                 if ((identification.toLowerCase()).
                                 		equals(line.split("_")[0].
                                 		toLowerCase())) {
@@ -128,6 +131,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
+                        	br.close();
                                 if ((identification.toLowerCase()).
                                 		equals(line.split("_")[0].
                                 		toLowerCase())) {
@@ -157,6 +161,7 @@ public class Model {
                         String line;
                         
                         while((line = br.readLine()) != null) {
+                        	br.close();
                                 if ((studentID.toLowerCase()).equals
                                 	(line.split("_")[0].toLowerCase())
                                      && subjectID.toLowerCase().equals
@@ -275,6 +280,7 @@ public class Model {
                         BufferedReader br = new BufferedReader(fr);
                         String line;
                         while((line = br.readLine()) != null) {
+                        	br.close();
                                 View.showMessage(line.split("_")[0] 
                                 	+ " " + line.split("_")[1] + "\n");
                         }
@@ -296,6 +302,7 @@ public class Model {
                         
                         View.showMessage("Result\n");
                         while((line = br.readLine()) != null) {
+                        	br.close();
                                 if (line.split("_")[1].toLowerCase()
                                 	.contains(keyword.toLowerCase())) {
                                  View.showMessage(line.split("_")[1] + "\n");
